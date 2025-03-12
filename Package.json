@@ -1,20 +1,18 @@
 {
     "name": "durakgo-privacy-policy",
     "version": "0.1.0",
-    "homepage": "https://onurds.github.io/DurakGo-Privacy/",
     "private": true,
     "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "lint": "react-scripts lint"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
     },
     "dependencies": {
         "framer-motion": "^12.5.0",
+        "next": "^15.2.2",
         "react": "^19.0.0",
-        "react-dom": "^19.0.0",
-        "react-scripts": "^5.0.1"
+        "react-dom": "^19.0.0"
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.16",
