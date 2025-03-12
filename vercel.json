@@ -1,10 +1,13 @@
 {
   "version": 2,
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "outputDirectory": ".next",
   "framework": "nextjs",
-  "builds": [
+  "routes": [
     {
-      "src": "package.json",
-      "use": "@vercel/next"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
